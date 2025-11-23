@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">
+            <i class="fa-solid fa-list-check"></i> Task Manager
+        </h1>
+
+        <!-- Input Section -->
+        <div class="task-input">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-pen-to-square input-icon"></i>
+                <input type="text" id="taskInput" placeholder="Write your task...">
+            </div>
+
+            
+
+            <button id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            
+           
+        </div>
+             <div class="input-wrapper date-wrapper">
+                <i class="fa-solid fa-calendar-days input-icon"></i>
+                <input type="datetime-local" id="taskDate">
+            </div>
+            <br><br>
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="task-list"></ul>
+
+    </div>
+
+    <script src="jsp.js"></script>
+</body>
+</html>
